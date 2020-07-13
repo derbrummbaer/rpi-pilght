@@ -48,7 +48,8 @@ RUN apt-get update && \
 ############################################################
 
 # Repository für Pilight
-RUN echo "deb http://apt.pilight.org/ nightly main" > /etc/apt/sources.list.d/pilight.list && \
+RUN echo "deb http://apt.pilight.org/ nightly main" > /etc/apt/sources.list.d/pilight-nightly.list && \
+	echo "deb http://apt.pilight.org/ stable main" > /etc/apt/sources.list.d/pilight-stable.list && \
 	wget -O - https://apt.pilight.org/pilight.key | apt-key add -
 
 RUN apt-get update && \
