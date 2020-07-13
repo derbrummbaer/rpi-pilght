@@ -3,5 +3,5 @@
 Kommentar=""
 
 git add .
-git commit . -m "Änderung: Löschen PID File vor Start"
+git commit . -m "Nightly Hinzugefügt"
 git push -u origin master
